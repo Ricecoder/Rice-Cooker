@@ -1,0 +1,16 @@
+{
+  "name": "ricecoder-website",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Ricecoder/Rice-Cooker",
+  "authors": [
+    "Lacey Rice"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
