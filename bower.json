@@ -12,5 +12,11 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "normalize": "~1.0.4",
+    "normalize-strings": "normalize#~1.0.4",
+    "normalize-css": "~3.0.3",
+    "font-awesome": "~4.5.0"
+  }
 }
