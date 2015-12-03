@@ -11,16 +11,19 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link href='http://fonts.googleapis.com/css?family=Oswald|Raleway' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/normalize.css">
+
+        <!--bower:css  -->
+        <link rel='stylesheet' href='../bower_components/normalize-css/normalize.css' />
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- endbower -->
     </head>
     <body>
       <main  class="container"> <!--FIXME: used to be .section-->
         <section class="welcome">
             <h2>Welcome</h2>
             <p>to my portfolio</p>
-            <img src="images/ricebowl.svg" alt="" />
+            <img src="../images/ricebowl.svg" alt="" />
         </section>
 
 
@@ -52,7 +55,7 @@
 
       <section class="about">
 
-        <img src="images/me.jpg" alt="" class="right"/>
+        <img src="/images/me.jpg" alt="" class="right"/>
         <h3>About me</h3>
         <p>I am a nurse turned developer on the quest to learn everything I can about all things coding. In September I put life on hold to immerse myself in a 12 week Front End Engineering course at The Iron Yard Durham. </p>
       </section>
@@ -60,15 +63,17 @@
 
         <section class="contact">
         <h3>Where to Find Me</h3>
-        <ul class="fa-ul">
-          <li><a href="https://twitter.com/@ricecoder" class="fa-li fa fa-twitter fa-lg">@ricecoder</a></li>
-          <li><a href="https://github.com/Ricecoder" class="fa-li fa fa-github fa-lg">Ricecoder</a></li>
+        <nav class="fa-ul">
+          <a href="https://twitter.com/@ricecoder" id="twitter">@ricecoder</a>
+          <a href="https://github.com/Ricecoder" id="github">Ricecoder</a>
+          <a href="https://www.linkedin.com/in/lacey-rice-9b5b16a1" id="linkedin">Linkedin Profile</a>
+
+        </nav>
         </section>
-  
+
     </main>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
