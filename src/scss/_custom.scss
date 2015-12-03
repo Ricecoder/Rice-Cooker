@@ -16,31 +16,16 @@ body {
     font-family: 'Raleway', sans-serif;
   }
 
-  a {
 
-  }
-
-  a:hover {
-
-  }
 
   /* Utlility styling */
-  .left {
-    float: left;
-  }
+
 
   .right {
     float: right;
   }
 
-  .center {
-    text-align: center;
-    margin: 0 auto;
-  }
 
-  .clearfix {
-    clear: both;
-  }
 
   /* Structural Elements */
   .container {
@@ -48,21 +33,69 @@ body {
     margin: 10px auto;
   }
 
-  .section {
-    padding: 10px;
-  }
 
-  #welcome {
+  .welcome {
     background: rgba(177, 212, 188, 0.5);
+
+    h2 {
+      font-size: 70px; //FIXME: change to pt
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 60px; //FIXME: change to pt
+    }
   }
 
-  #about {
+  .about {
       background: rgba(177, 212, 188, 0.5);
+      h3 {
+        font-size: 50px; //FIXME: change to pt
+      }
+
+      p {
+        font-size: 20px; //FIXME: change to pt
+      }
+
+      img {
+        margin: 5px;
+        padding: 15px;
+        float: right;
+      }
   }
 
-  #contact {
+  .contact {
     background: rgba(146, 176, 169, 0.5);
-  }
+    font: red;
+    font-family: FontAwesome;
+
+
+
+    h3 {
+      font-size: 50px;
+    }
+
+    #twitter::before {
+      content: '\f099';
+      font-family: FontAwesome;
+      font-size: 12pt;
+    }
+
+    #github::before {
+      content: '\f09b';
+      font-family: FontAwesome;
+      font-size: 12pt;
+
+    }
+
+    #linkedin::before {
+      content: '\f08c';
+      font-family: FontAwesome;
+      font-size: 12pt;
+
+    }
+  } //END .CONTACT
+
 
   .row{padding: 0 20px;}
   .row:after {
@@ -95,37 +128,8 @@ body {
     box-sizing: border-box;
   }
   /* Content*/
-  #portfolio .item{
+  .portfolio .item{
     text-align: center; margin: 0 auto;
   }
-  #welcome h2 {
-    font-size: 70px;
-  }
 
-  #welcome p {
-    font-size: 20px;
-  }
-
-  #header h1 {
-    text-align: center;
-    font-size: 60px;
-  }
-
-  #about h3 {
-    font-size: 50px;
-  }
-
-  #about p {
-    font-size: 18px;
-  }
-
-  #about img {
-    margin: 5px;
-    padding: 15px;
-    float: right;
-  }
-
-  #contact h3 {
-    font-size: 50px;
-  }
-}
+} //END BODY
