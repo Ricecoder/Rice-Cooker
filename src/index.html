@@ -11,7 +11,7 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link href='http://fonts.googleapis.com/css?family=Oswald|Raleway' rel='stylesheet' type='text/css'>
-
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <!--bower:css  -->
         <link rel='stylesheet' href='../bower_components/normalize-css/normalize.css' />
         <link rel="stylesheet" href="css/main.css">
@@ -19,47 +19,79 @@
         <!-- endbower -->
     </head>
     <body>
-      <main  class="container"> <!--FIXME: used to be .section-->
+      <main class="container">
         <section class="welcome">
-            <h2>Welcome</h2>
-            <p>to my portfolio</p>
-            <!-- <img src="../images/ricebowl.svg" alt="" /> -->
+          <div>
+            <h2>Welcome</h2> <!--FIXME: DO SOMETHING BETTER HERE-->
+            <p>TO MY PORTFOLIO</p>
+          </div>
+
         </section>
 
 
         <section class="portfolio">
           <h1>Lacey Rice</h1>
           <div class="row">
-            <div class="col-1-3">
+            <div class="col-1-2">
               <div class="image-container">
                 <img src="img/screencapture-wishcastr.png" alt=""/>
               </div>
               <h3 class="img-title">Wishcastr.com</h3>
               <p class="description">E-Commerce Site for tracking item prices</p>
-              <p>Tech used: AngularJS,
+              <p><strong>Tech used: </strong>AngularJS, HTML5, Sass, Ruby on Rails 5</p>
+              <p><strong>What I did: </strong>Designed the site, structured it using HTML5,
+              styled the site using Sass, used AngularJS to access the Ruby API</p>
+              <!--
+              <ul class="task-list">
+                <li class="click"><h5>What I did:</h5></li>
+                <li>Designed the site</li>
+                <li>Structured it using HTML5</li>
+                <li>Styled the site using Sass</li>
+                <li>Used AngularJS to access the Ruby API</li>
+              </ul>
+            -->
             </div>
 
-            <div class="col-1-3">
+            <div class="col-1-2">
               <div class="image-container">
-                <img src="http://placehold.it/250x250" alt="" />
-                <p>Image to come</p>
+                <img src="img/screencapture-stackundertow-2.png" alt="" />
               </div>
+              <h3 class="img-title">Stackundertow</h3>
+              <p class="description">A webapp based on Stack Overflow, where you
+              can ask a question, answer other's questions, and upvote or down vote answers</p>
+              <p><strong>Tech used: </strong>AngularJS, jQuery, HTML5, Sass, Ruby on Rails</p>
+              <p><strong>What I did: </strong></p>
             </div>
 
-            <div class="col-1-3">
+            <div class="col-1-2">
               <div class="image-container">
-                <img src="http://placehold.it/250x250" alt="" class="center" />
-                <p>Image to come</p>
+                <img src="img/screencapture-jal-stats.png" alt="" class="center" />
               </div>
+              <h3 class="img-title">Jal-Stats</h3>
+              <p class="description">A mobile app for tracking activities</p>
+              <p><strong>Tech used: </strong>AngularJS, jQuery, HTML5, Sass, Python, Django</p>
+              <p><strong>What I did: </strong>I designed this site with a mobile first view. Using AngularJS I
+                accessed the Django API in order to POST and GET data.</p>
             </div>
-          </div>
+          </div> <!--END ROW DIV-->
         </section>
 
       <section class="about">
-
-        <img src="/images/me.jpg" alt="" class="right"/>
-        <h3>About me</h3>
-        <p>I am a nurse turned developer on the quest to learn everything I can about all things coding. In September I put life on hold to immerse myself in a 12 week Front End Engineering course at The Iron Yard Durham. </p>
+        <div>
+          <img src="img/headshot.jpg" alt="Lacey Rice" class="right"/>
+          <h3>About me</h3>
+          <p>
+            I am a nurse turned developer on the quest to learn everything I can
+            about coding. In September I put my life on hold to immerse myself in a
+            12-week Front End Engineering course at The Iron Yard Durham. I graduated
+            November 20th with an addiction to programming and caffeine.
+          </p>
+            <h5>My Goals Going Forward</h5>
+            <p>Continue sharpening my JavaScript skills</p>
+            <p>Familiarize myself with ES6 and AngularJS 2.0</p>
+            <p>Learn about mobile development</p>
+            <p>Get a Raspberry Pi and do amazing things with it</p>
+        </div>
       </section>
 
 
