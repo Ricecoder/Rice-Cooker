@@ -1,0 +1,5 @@
+node_modules/
+bower_components/
+src/css/
+npm-debug.log
+src/img/Headshot.jpg
