@@ -83,8 +83,8 @@ body {
 
 
       .image-container{
-        width: 450px;
-        height: 450px;
+        // width: 450px;
+        // height: 450px;
         overflow-x: hidden;
         margin: 0 auto;
         border: 1px solid #d9d9d9;
@@ -106,9 +106,9 @@ body {
         padding-right: 20px;
       }
 
-      .col-1-2 {
-        width: 50%;
-      }
+      // .col-1-2 {
+      //   width: 50%;
+      // }
 
 
       [class*='col-']:last-of-type {
@@ -123,7 +123,7 @@ body {
 
       .info {
         text-align: left;
-        width: 60%;
+        // width: 60%;
         margin: 30px auto;
 
         h3 {
@@ -131,10 +131,12 @@ body {
           color: #FF6F69;
           padding-bottom: 5px;
           border-bottom: 1px solid #d9d9d9;
-
         }
-
       }//END INFO
+      #soon {
+        color: #FF6F69;
+        font-size: 18pt;
+      }
     } //END .PORTFOLIO
 
     .about {
@@ -145,7 +147,7 @@ body {
           margin-left: 15px;
           padding-top: 2px;
           img {
-            margin: 5px;
+            margin-right: 10%;
             margin-top: 8%;
             padding: 15px;
             float: right;
@@ -164,7 +166,7 @@ body {
               font-size: 16pt;
             }
 
-          }
+          }//END .ME
         }//END DIV
       }//END ABOUT
 
@@ -216,3 +218,71 @@ body {
       } //END .CONTACT
   }//END CONTAINER
 } //END BODY
+
+@media (max-width: 767px) {           //MOBILE
+  .portfolio {
+
+    .image-container{
+      width: 350px;
+      height: 350px;
+    }//END .IMGAGE_CONTAINER
+
+    .col-1-2 {
+      width: 100%;
+    }
+
+    .info {
+      width: 100%;
+
+    }//END INFO
+  }//END .PORTFOLIO
+}//END MOBILE
+
+@media (max-width: 1024px) and (min-width: 768px){      //TABLET
+  .portfolio {
+
+    .image-container{
+      width: 350px;
+      height: 350px;
+    }//END .IMGAGE_CONTAINER
+
+    .col-1-2 {
+      width: 100%;
+    }
+
+    .info {
+      width: 60%;
+
+    }//END INFO
+  }//END .PORTFOLIO
+}
+
+@media (min-width: 1025px) {  //DESKTOP
+  .welcome {
+    .fa-links-tp {
+      a{
+
+      }
+      a:hover {
+        color: #ffb7b4;
+      }
+    }//END .FA-LINKS-TP
+  }//END WELCOME
+
+  .portfolio {
+
+    .image-container{
+      width: 450px;
+      height: 450px;
+    }//END .IMGAGE_CONTAINER
+
+    .col-1-2 {
+      width: 50%;
+    }
+
+    .info {
+      width: 60%;
+
+    }//END INFO
+  }//END .PORTFOLIO
+}
