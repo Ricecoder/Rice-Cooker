@@ -1,7 +1,7 @@
 /* global styling */
 
 body {
-  background: #e2efe6 url('../img/bkg.png') repeat;
+  // background: #e2efe6 url('../img/bkg.png') repeat;
   margin: 0;
   padding: 0;
 
@@ -16,9 +16,6 @@ body {
     font-family: 'Lato', sans-serif;
 
   }
-
-  /* Utlility styling */
-
 
   .right {
     float: right;
@@ -35,23 +32,62 @@ body {
 
       div {
         @extend .clearfix;
-        padding-bottom: 10%;
-        h2 {
+        padding-bottom: 10px;
+        h1 {
           font-size: 40pt;
         }
         p {
           font-size: 16pt;
         }
       } //END DIV
+      .fa-links-tp {
+        color: red;
+        font-size: 30pt;
+        width: 100%;
+        padding-bottom: 5%;
+
+        a {
+          text-decoration: none;
+          margin: 10px;
+          color: #FF6F69;
+        }
+        a:hover {
+          color: #ffb7b4;
+        }
+
+        #email-tp::before {
+          content: '\f0e0';
+          font-family: FontAwesome;
+        }
+        #twitter-tp::before {
+          content: '\f099';
+          font-family: FontAwesome;
+
+        }
+
+        #github-tp::before {
+          content: '\f09b';
+          font-family: FontAwesome;
+        }
+
+        #linkedin-tp::before {
+          content: '\f08c';
+          font-family: FontAwesome;
+        }
+      }//END FA-LINKS
     } //END WELCOME
 
     .portfolio {
-      text-align: center; margin: 0 auto;
+      text-align: center;
+      margin: 10% auto;
+
+
       .image-container{
         width: 450px;
         height: 450px;
         overflow-x: hidden;
         margin: 0 auto;
+        border: 1px solid #d9d9d9;
         img {
           max-width: 100%;
           // max-height: 100%;
@@ -84,6 +120,16 @@ body {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
       }
+
+      .info {
+        text-align: left;
+        width: 50%;
+        margin: 30px auto;
+        h3 {
+          text-align: center;
+          color: #FF6F69;
+        }
+      }//END INFO
     } //END .PORTFOLIO
 
     .about {
@@ -119,22 +165,34 @@ body {
         // background: rgba(146, 176, 169, 0.5);
         font: red;
         font-family: FontAwesome;
-        margin-left: 15px;
+        text-align: center;
 
 
         h3 {
           font-size: 30pt;
         }
 
-        .fa-ul {
-          font-size: 20pt;
+        .fa-links {
+          font-size: 35pt;
+          margin-bottom: 5%;
+          width: 100%;
           a {
             text-decoration: none;
+            margin: 10px;
+            color: #a1cbae;
+          }
+          a:hover {
+            color: #d8e9dd;
           }
 
+          #email::before {
+            content: '\f0e0';
+            font-family: FontAwesome;
+          }
           #twitter::before {
             content: '\f099';
             font-family: FontAwesome;
+
           }
 
           #github::before {
