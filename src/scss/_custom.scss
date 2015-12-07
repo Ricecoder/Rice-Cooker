@@ -123,40 +123,47 @@ body {
 
       .info {
         text-align: left;
-        width: 50%;
+        width: 60%;
         margin: 30px auto;
+
         h3 {
           text-align: center;
           color: #FF6F69;
+          padding-bottom: 5px;
+          border-bottom: 1px solid #d9d9d9;
+
         }
+
       }//END INFO
     } //END .PORTFOLIO
 
     .about {
         background: rgba(177, 212, 188, 0.5);
-        padding-bottom: 10%;
+        padding-bottom: 5%;
 
         div {
           margin-left: 15px;
           padding-top: 2px;
-
-          h3 {
-            font-size: 30pt;
-          }
-
-          p {
-            font-size: 14pt;
-          }
-
-          h5 {
-            font-size: 16pt;
-          }
-
           img {
             margin: 5px;
-            margin-top: 1.75%;
+            margin-top: 8%;
             padding: 15px;
             float: right;
+          }
+          .me {
+            width: 60%;
+            h3 {
+              font-size: 30pt;
+            }
+
+            p {
+              font-size: 14pt;
+            }
+
+            h5 {
+              font-size: 16pt;
+            }
+
           }
         }//END DIV
       }//END ABOUT
